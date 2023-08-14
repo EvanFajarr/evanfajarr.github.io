@@ -6,6 +6,7 @@
   <title>Portfolio</title>
   <link href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-900 text-white">
   <nav class="flex flex-wrap items-center justify-between p-5 bg-blue-200">      
@@ -34,17 +35,21 @@
             </button>
           </div>      
           <div class="toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-blue-900 md:border-none">        
-            <a href="#" class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Home</a>
-            <a href="#" class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Products</a>
-            <a href="#" class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Pricing</a>
-            <a href="#" class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Contact</a>
+            <a href="" class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Home</a>
+            <a href="#project" class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Project</a>
+            <a href="#AboutMe" class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">About Me</a>
+            <a href="" class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Contact</a>
           </div>      
-          <a href="#" class="toggle hidden md:flex w-full md:w-auto px-4 py-2 text-right bg-blue-900 hover:bg-blue-500 text-white md:rounded">Create Account</a>
+          <!-- <a href="#" class="toggle hidden md:flex w-full md:w-auto px-4 py-2 text-right bg-blue-900 hover:bg-blue-500 text-white md:rounded">Create Account</a> -->
         </nav>  
 
-  <header class="container mx-auto mt-8 text-center">
-    <h1 class="text-3xl font-semibold">Welcome to My Portfolio</h1>
+  <header class="container mx-auto mt-8 text-center" id="project">
+    <h1 class="text-3xl font-semibold" >Welcome to My Portfolio</h1>
     <p class="mt-2">Showcasing my work and projects</p>
+    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4" >
+     <a href="https://github.com/EvanFajarr" target="blank">Show More </a> 
+    </button>
+    
   </header>
 
   <section class="container mx-auto mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -66,6 +71,58 @@
       <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
   </section>
+
+  <section class="container mx-auto mt-8 text-center" id="AboutMe">
+    <h2 class="text-2xl font-semibold ">About Me</h2>
+    <p class="w-full h-48 object-cover mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur provident voluptatum eos iusto repudiandae labore, vel velit obcaecati nesciunt reprehenderit!</p>
+  </section>
+
+  <h1 class="text-3xl font-semibold mb-4 text-center">Programming Languages and Frameworks</h1>
+  
+  <div class="carousel">
+    <div class="card bg-gray-800 p-4 rounded-lg">
+      <img src="https://img.icons8.com/color/48/000000/php.png" alt="PHP Logo" class="w-16 h-16 mx-auto mb-2">
+      <h2 class="text-xl font-semibold mb-2 text-center">PHP</h2>
+    </div>
+    <div class="card bg-gray-800 p-4 rounded-lg">
+      <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript Logo" class="w-16 h-16 mx-auto mb-2">
+      <h2 class="text-xl font-semibold mb-2 text-center">JavaScript</h2>
+    </div>
+    <div class="card bg-gray-800 p-4 rounded-lg">
+      <img src="https://laravel.com/img/logomark.min.svg" alt="Laravel Logo" class="w-16 h-16 mx-auto mb-2">
+      <h2 class="text-xl font-semibold mb-2 text-center">Laravel</h2>
+    </div>
+    <div class="card bg-gray-800 p-4 rounded-lg">
+      <img src="https://img.icons8.com/color/48/000000/bootstrap.png" alt="Bootstrap Logo" class="w-16 h-16 mx-auto mb-2">
+      <h2 class="text-xl font-semibold mb-2 text-center">Bootstrap</h2>
+    </div>
+    <div class="card bg-gray-800 p-4 rounded-lg">
+      <img src="https://img.icons8.com/color/48/000000/mysql.png" alt="Mysql Logo" class="w-16 h-16 mx-auto mb-2">
+      <h2 class="text-xl font-semibold mb-2 text-center">MySQL</h2>
+    </div>
+    <div class="card bg-gray-800 p-4 rounded-lg">
+      <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/tailwind-css-icon.png" alt="Tailwind Logo" class="w-16 h-16 mx-auto mb-2">
+      <h2 class="text-xl font-semibold mb-2 text-center">Tailwind CSS</h2>
+    </div>
+    <div class="card bg-gray-800 p-4 rounded-lg">
+      <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma Logo" class="w-16 h-16 mx-auto mb-2">
+      <h2 class="text-xl font-semibold mb-2 text-center">Bulma</h2>
+    </div>
+    <div class="card bg-gray-800 p-4 rounded-lg">
+      <img src="https://img.icons8.com/color/48/000000/wordpress.png" alt="WordPress Logo" class="w-16 h-16 mx-auto mb-2">
+      <h2 class="text-xl font-semibold mb-2 text-center">WordPress</h2>
+    </div>
+    <div class="card bg-gray-800 p-4 rounded-lg">
+      <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="Html5 Logo" class="w-16 h-16 mx-auto mb-2">
+      <h2 class="text-xl font-semibold mb-2 text-center">Html5</h2>
+    </div>
+    <div class="card bg-gray-800 p-4 rounded-lg">
+      <img src="https://img.icons8.com/color/48/000000/css3.png" alt="Css3 Logo" class="w-16 h-16 mx-auto mb-2">
+      <h2 class="text-xl font-semibold mb-2 text-center">Css3</h2>
+    </div>
+  </div>
+
+
 </body>
 <script>
 document.getElementById("hamburger").onclick = function toggleMenu() {
@@ -74,6 +131,17 @@ document.getElementById("hamburger").onclick = function toggleMenu() {
     navToggle.item(i).classList.toggle("hidden");
   }
 };
+const carousel = document.querySelector('.carousel');
+    let scrollAmount = 0;
 
+    function scrollCarousel(direction) {
+      const cardWidth = document.querySelector('.card').offsetWidth + 16;
+      scrollAmount += direction * cardWidth;
+      carousel.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+    }
+
+    setInterval(() => {
+      scrollCarousel(1);
+    }, 3000);
 </script>
 </html>
