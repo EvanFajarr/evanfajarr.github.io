@@ -1,11 +1,11 @@
 module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'], 
-  darkMode: 'media', // Atur menjadi 'media' atau 'class' jika ingin menggunakan dark mode
+  darkMode: 'media', 
   theme: {
-    extend: {}, // Tambahan gaya kustom
+    extend: {}, 
   },
   variants: {
-    extend: {}, // Ekstensi varian, misalnya hover, focus, dsb.
+    extend: {}, 
   },
-  plugins: [], // Plugin tambahan
+  plugins: [], 
 }
