@@ -11,28 +11,30 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-900 text-white">
-  <nav class="flex flex-wrap items-center justify-between p-5 bg-blue-200">      
+  <nav class="flex flex-wrap items-center justify-between p-5 bg-gray-900 text-white">      
     <div class="logo">
-      <span class="logo-text">Evan Fajar</span>
+      <span class="logo-text text-white">Evan Fajar</span>
     </div>
           <div class="flex md:hidden">
-            <button id="hamburger">
-              <img class="toggle block" src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png" width="40" height="40" />
-              <img class="toggle hidden" src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png" width="40" height="40" />
-            </button>
+            <button id="hamburger" class="hover:bg-white p-2 rounded-md transition duration-300">
+              <img class="toggle block" src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png" width="24" height="24" />
+              <img class="toggle hidden" src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png" width="24" height="24" />
+            </button>            
           </div>      
-          <div class="toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-blue-900 md:border-none">   
-            <a href="#AboutMe" class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">About Me</a>     
-            <a href="#project" class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Project</a>
-            <!-- <a href="" class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Home</a> -->
-            <a href="#Contact" class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Contact</a>
+          <div class="toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-gray-900 md:border-none">   
+            <a href="#AboutMe" class="block md:inline-block text-white-900 hover:text-white-500 px-3 py-3 border-b-2 border-white-900 md:border-none">About Me</a>     
+            <a href="#project" class="block md:inline-block text-white-900 hover:text-white-500 px-3 py-3 border-b-2 border-white-900 md:border-none">Project</a>
+            <!-- <a href="" class="block md:inline-block text-white-900 hover:text-white-500 px-3 py-3 border-b-2 border-white-900 md:border-none">Home</a> -->
+            <a href="#Contact" class="block md:inline-block text-white-900 hover:text-white-500 px-3 py-3 border-b-2 border-white-900 md:border-none">Contact</a>
           </div>      
-          <!-- <a href="#" class="toggle hidden md:flex w-full md:w-auto px-4 py-2 text-right bg-blue-900 hover:bg-blue-500 text-white md:rounded">Create Account</a> -->
+          <!-- <a href="#" class="toggle hidden md:flex w-full md:w-auto px-4 py-2 text-right bg-white-900 hover:bg-white-500 text-white md:rounded">Create Account</a> -->
         </nav>  
 
         <header class="container mx-auto mt-10 text-center" id="AboutMe">
           <h1 class="text-3xl font-semibold">Welcome to My Portfolio</h1>
-          <p class="mt-2">Hello everyone, introduce my name is evan fajar krisdiyanto.I am a fullstack web developer at DV9 International Pte Ltd.  </p>
+          <p class="mt-2">
+            <span id="typing-text"></span>
+          </p>
           <div class="social-buttons mt-4 flex justify-center">
             <a href="https://github.com/EvanFajarr" target="_blank" class="social-button github-button">
               <img src="https://img.icons8.com/color/48/000000/github--v1.png" alt="GitHub Logo" class="social-logo">
@@ -50,7 +52,7 @@
 
         <section class="container mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="project">
           <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-               class="project-card bg-gray-800 p-4 rounded-md shadow-md">
+               class="project-card bg-gray-800 p-4 rounded-md shadow-md mb-10">
             <img src="good food.JPG" alt="Project Image" class="w-full h-48 object-cover mb-4">
             <div class="project-detail">
               <img src="goodfood full.png" alt="Project Image" class="object-contain">
@@ -60,7 +62,7 @@
           </div>
 
           <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-               class="project-card bg-gray-800 p-4 rounded-md shadow-md">
+               class="project-card bg-gray-800 p-4 rounded-md shadow-md mb-10">
             <img src="rotiku.JPG" alt="Project Image" class="w-full h-48 object-cover mb-4">
             <div class="project-detail">
               <img src="rotiku full.png" alt="Project Image" class="object-contain">
@@ -70,7 +72,7 @@
           </div>
 
           <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-               class="project-card bg-gray-800 p-4 rounded-md shadow-md">
+               class="project-card bg-gray-800 p-4 rounded-md shadow-md mb-10">
             <img src="pengaduan masyarakat.JPG" alt="Project Image" class="w-full h-48 object-cover mb-4">
             <div class="project-detail">
               <img src="pengaduan masyarakat full.png" alt="Project Image" class="object-contain">
@@ -86,7 +88,7 @@
 
   
 
-  <h1 class="text-3xl font-semibold mb-4 mt-10 text-center ">Programming Languages and Frameworks</h1>
+  <!-- <h1 class="text-3xl font-semibold mb-4 mt-10 text-center ">Programming Languages and Frameworks</h1> -->
   
   <section class="container mx-auto mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 ">
     <div class="card bg-gray-800 p-4 rounded-lg">
@@ -137,17 +139,17 @@
     <form class="max-w-md mx-auto">
       <div class="mb-4">
         <label for="name" class="block mb-2">Name</label>
-        <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:border-blue-500 focus:outline-none" placeholder="Your Name">
+        <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:border-white-500 focus:outline-none" placeholder="Your Name">
       </div>
       <div class="mb-4">
         <label for="email" class="block mb-2">Email</label>
-        <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:border-blue-500 focus:outline-none" placeholder="Your Email">
+        <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:border-white-500 focus:outline-none" placeholder="Your Email">
       </div>
       <div class="mb-4">
         <label for="message" class="block mb-2">Message</label>
-        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:border-blue-500 focus:outline-none" placeholder="Your Message"></textarea>
+        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:border-white-500 focus:outline-none" placeholder="Your Message"></textarea>
       </div>
-      <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none">Submit</button>
+      <button type="submit" class="bg-white bg-white-600 text-gray-900 font-bold py-2 px-4 rounded focus:outline-none text-center">Submit</button>
     </form>
     <div class="mt-4" id="success-message" style="display: none;">
       <p class="bg-green-500 text-white py-2 px-4 rounded">Your message has been sent successfully!</p>
@@ -179,5 +181,23 @@ const contactForm = document.getElementById('contact-form');
         successMessage.style.display = 'none';
       }, 3000);
     });
+
+
+   
+</script>
+<script>
+   const typingText = "Hello everyone, my name is Evan Fajar Krisdiyanto. I am a fullstack web developer at DV9 International Pte Ltd.";
+    const typingElement = document.getElementById("typing-text");
+
+    let index = 0;
+    function typeText() {
+      if (index < typingText.length) {
+        typingElement.textContent += typingText.charAt(index);
+        index++;
+        setTimeout(typeText, 50); 
+      }
+    }
+
+    typeText(); 
 </script>
 </html>

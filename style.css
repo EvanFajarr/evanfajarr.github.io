@@ -68,3 +68,43 @@
     max-width: 80%;
     max-height: 80%;
   }
+
+
+:root {
+  --primary-color: #221F20;
+  --secondary-color: #E53E3E;
+}
+
+
+.logo {
+  margin-right: 10px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card .project-detail {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project-card:hover .project-detail {
+  opacity: 1;
+}
+
+
+.card {
+  margin-right: 10px;
+}
+
+
+.container form {
+  padding: 20px;
+}
+
+.container form button[type="submit"] {
+  padding: 10px 20px;
+}
