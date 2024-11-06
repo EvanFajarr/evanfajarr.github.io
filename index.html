@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evan Fajar </title>
+  <link href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white">
+  <nav class="flex flex-wrap items-center justify-between p-5 bg-gray-900 text-white">      
+    <div class="logo">
+      <span class="logo-text text-white">Evan Fajar</span>
+    </div>
+          <div class="flex md:hidden">
+            <button id="hamburger" class="hover:bg-white p-2 rounded-md transition duration-300">
+              <img class="toggle block" src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png" width="24" height="24" />
+              <img class="toggle hidden" src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png" width="24" height="24" />
+            </button>            
+          </div>      
+          <div class="toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-gray-900 md:border-none">   
+            <a href="#AboutMe" class="block md:inline-block text-white-900 hover:text-white-500 px-3 py-3 border-b-2 border-white-900 md:border-none">About Me</a>     
+            <a href="#project" class="block md:inline-block text-white-900 hover:text-white-500 px-3 py-3 border-b-2 border-white-900 md:border-none">Project</a>
+            <!-- <a href="" class="block md:inline-block text-white-900 hover:text-white-500 px-3 py-3 border-b-2 border-white-900 md:border-none">Home</a> -->
+            <a href="#Contact" class="block md:inline-block text-white-900 hover:text-white-500 px-3 py-3 border-b-2 border-white-900 md:border-none">Contact</a>
+          </div>      
+          <!-- <a href="#" class="toggle hidden md:flex w-full md:w-auto px-4 py-2 text-right bg-white-900 hover:bg-white-500 text-white md:rounded">Create Account</a> -->
+        </nav>  
+
+        <header class="container mx-auto mt-10 text-center" id="AboutMe">
+          <h1 class="text-3xl font-semibold">Welcome to My Portfolio</h1>
+          <p class="mt-2">
+            <span id="typing-text"></span>
+          </p>
+          <div class="social-buttons mt-4 flex justify-center">
+            <a href="https://github.com/EvanFajarr" target="_blank" class="social-button github-button">
+              <img src="https://img.icons8.com/color/48/000000/github--v1.png" alt="GitHub Logo" class="social-logo">
+            </a>
+            <a href="https://www.linkedin.com/in/evan-fajar-27b50b249/" target="_blank" class="social-button linkedin-button ml-4">
+              <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn Logo" class="social-logo"> 
+            </a>
+            <a href="https://www.instagram.com/evannn.3/" target="_blank" class="social-button instagram-button ml-4">
+              <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram Logo" class="social-logo">
+            </a>
+          </div>
+        </header>
+        
+        
+
+        <section class="container mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="project">
+          <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+               class="project-card bg-gray-800 p-4 rounded-md shadow-md mb-10">
+            <img src="good food.JPG" alt="Project Image" class="w-full h-48 object-cover mb-4">
+            <div class="project-detail">
+              <img src="goodfood full.png" alt="Project Image" class="object-contain">
+            </div>
+            <h2 class="text-xl font-semibold">GOOD FOOD</h2>
+            <p class="text-gray-400">good food is a web for online food order, sign up and order your food now!!!!</p>
+          </div>
+
+          <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+               class="project-card bg-gray-800 p-4 rounded-md shadow-md mb-10">
+            <img src="rotiku.JPG" alt="Project Image" class="w-full h-48 object-cover mb-4">
+            <div class="project-detail">
+              <img src="rotiku full.png" alt="Project Image" class="object-contain">
+            </div>
+            <h2 class="text-xl font-semibold">Rotiku</h2>
+            <p class="text-gray-400">Rotiku is a one-click instant bread delivery website.</p>
+          </div>
+
+          <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+               class="project-card bg-gray-800 p-4 rounded-md shadow-md mb-10">
+            <img src="pengaduan masyarakat.JPG" alt="Project Image" class="w-full h-48 object-cover mb-4">
+            <div class="project-detail">
+              <img src="pengaduan masyarakat full.png" alt="Project Image" class="object-contain">
+            </div>
+            <h2 class="text-xl font-semibold">Pengaduan Masyarakat</h2>
+            <p class="text-gray-400">Pengaduan Masyarakat is a website for resolving public complaints sent directly to the government.</p>
+          </div>
+        
+          <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+               class="project-card bg-gray-800 p-4 rounded-md shadow-md mb-10">
+            <img src="ldptc.PNG" alt="Project Image" class="w-full h-48 object-cover mb-4">
+            <div class="project-detail">
+              <img src="ldptc full.png" alt="Project Image" class="object-contain">
+            </div>
+            <h2 class="text-xl font-semibold">LDPTC</h2>
+            <p class="text-gray-400">Last Days Prophetic Training College (LDPTC) is an institution dedicated to providing biblical, theological, and prophetic education</p>
+          </div>
+
+          <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+          class="project-card bg-gray-800 p-4 rounded-md shadow-md mb-10">
+       <img src="kims.PNG" alt="Project Image" class="w-full h-48 object-cover mb-4">
+       <div class="project-detail">
+         <img src="kims full.png" alt="Project Image" class="object-contain">
+       </div>
+       <h2 class="text-xl font-semibold">Kimsflorist</h2>
+       <p class="text-gray-400"> Kim's Florist offers a range of floral products and arrangements for occasions such as birthdays, weddings, and sympathy.</p>
+     </div>
+        
+        </section>
+        
+
+  
+
+  <!-- <h1 class="text-3xl font-semibold mb-4 mt-10 text-center ">Programming Languages and Frameworks</h1> -->
+  
+  <section class="container mx-auto mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 ">
+    <div class="card bg-gray-800 p-4 rounded-lg">
+      <img src="https://img.icons8.com/color/48/000000/php.png" alt="PHP Logo" class="w-16 h-16 mx-auto mb-2">
+      <h2 class="text-xl font-semibold mb-2 text-center">PHP</h2>
+    </div>
+    <div class="card bg-gray-800 p-4 rounded-lg">
+      <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript Logo" class="w-16 h-16 mx-auto mb-2">
+      <h2 class="text-xl font-semibold mb-2 text-center">JavaScript</h2>
+    </div>
+    <div class="card bg-gray-800 p-4 rounded-lg">
+      <img src="https://laravel.com/img/logomark.min.svg" alt="Laravel Logo" class="w-16 h-16 mx-auto mb-2">
+      <h2 class="text-xl font-semibold mb-2 text-center">Laravel</h2>
+    </div>
+    <div class="card bg-gray-800 p-4 rounded-lg">
+      <img src="https://img.icons8.com/color/48/000000/bootstrap.png" alt="Bootstrap Logo" class="w-16 h-16 mx-auto mb-2">
+      <h2 class="text-xl font-semibold mb-2 text-center">Bootstrap</h2>
+    </div>
+    <div class="card bg-gray-800 p-4 rounded-lg">
+      <img src="https://img.icons8.com/color/48/000000/mysql.png" alt="Mysql Logo" class="w-16 h-16 mx-auto mb-2">
+      <h2 class="text-xl font-semibold mb-2 text-center">MySQL</h2>
+    </div>
+    <div class="card bg-gray-800 p-4 rounded-lg">
+      <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/tailwind-css-icon.png" alt="Tailwind Logo" class="w-16 h-16 mx-auto mb-2">
+      <h2 class="text-xl font-semibold mb-2 text-center">Tailwind CSS</h2>
+    </div>
+    <div class="card bg-gray-800 p-4 rounded-lg">
+      <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma Logo" class="w-16 h-16 mx-auto mb-2">
+      <h2 class="text-xl font-semibold mb-2 text-center">Bulma</h2>
+    </div>
+    <div class="card bg-gray-800 p-4 rounded-lg">
+      <img src="https://img.icons8.com/color/48/000000/wordpress.png" alt="WordPress Logo" class="w-16 h-16 mx-auto mb-2">
+      <h2 class="text-xl font-semibold mb-2 text-center">WordPress</h2>
+    </div>
+    <div class="card bg-gray-800 p-4 rounded-lg">
+      <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="Html5 Logo" class="w-16 h-16 mx-auto mb-2">
+      <h2 class="text-xl font-semibold mb-2 text-center">Html5</h2>
+    </div>
+    <div class="card bg-gray-800 p-4 rounded-lg">
+      <img src="https://img.icons8.com/color/48/000000/css3.png" alt="Css3 Logo" class="w-16 h-16 mx-auto mb-2">
+      <h2 class="text-xl font-semibold mb-2 text-center">Css3</h2>
+    </div>
+  </div>
+</section>
+
+  <div class="container mx-auto px-4 py-8 mt-10 " id="Contact">
+    <h1 class="text-3xl font-semibold mb-4 text-center">Contact Me</h1>
+    <form class="max-w-md mx-auto">
+      <div class="mb-4">
+        <label for="name" class="block mb-2">Name</label>
+        <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:border-white-500 focus:outline-none" placeholder="Your Name">
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block mb-2">Email</label>
+        <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:border-white-500 focus:outline-none" placeholder="Your Email">
+      </div>
+      <div class="mb-4">
+        <label for="message" class="block mb-2">Message</label>
+        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:border-white-500 focus:outline-none" placeholder="Your Message"></textarea>
+      </div>
+      <button type="submit" class="bg-white bg-white-600 text-gray-900 font-bold py-2 px-4 rounded focus:outline-none text-center">Submit</button>
+    </form>
+    <div class="mt-4" id="success-message" style="display: none;">
+      <p class="bg-green-500 text-white py-2 px-4 rounded">Your message has been sent successfully!</p>
+    </div>
+  </div>
+  
+
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+document.getElementById("hamburger").onclick = function toggleMenu() {
+  const navToggle = document.getElementsByClassName("toggle");
+  for (let i = 0; i < navToggle.length; i++) {
+    navToggle.item(i).classList.toggle("hidden");
+  }
+};
+const contactForm = document.getElementById('contact-form');
+    const successMessage = document.getElementById('success-message');
+
+    contactForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      successMessage.style.display = 'block';
+      contactForm.reset();
+      setTimeout(function () {
+        successMessage.style.display = 'none';
+      }, 3000);
+    });
+
+
+   
+</script>
+<script>
+   const typingText = "Hello everyone, my name is Evan Fajar Krisdiyanto. I am a fullstack web developer at DV9 International Pte Ltd.";
+    const typingElement = document.getElementById("typing-text");
+
+    let index = 0;
+    function typeText() {
+      if (index < typingText.length) {
+        typingElement.textContent += typingText.charAt(index);
+        index++;
+        setTimeout(typeText, 50); 
+      }
+    }
+
+    typeText(); 
+</script>
+</html>
