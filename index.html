@@ -13,6 +13,44 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-900 text-white">
+  <style>
+    .project-card img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.project-card img:hover {
+    transform: scale(1.05);
+}
+
+#image-popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+#popup-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+#close-popup {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+  </style>
   <nav class="flex flex-wrap items-center justify-between p-5 bg-gray-900 text-white">      
     <div class="logo">
       <span class="logo-text text-white">Evan Fajar</span>
@@ -200,7 +238,10 @@
     </div>
   </div>
   
-
+<div id="image-popup">
+    <span id="close-popup">&times;</span>
+    <img id="popup-image" src="" alt="Full Image">
+</div>
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
@@ -303,6 +344,33 @@ document.querySelector('form').addEventListener('submit', function(e) {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const projectImages = document.querySelectorAll('.project-card img');
+    const imagePopup = document.getElementById('image-popup');
+    const popupImage = document.getElementById('popup-image');
+    const closePopup = document.getElementById('close-popup');
 
+    projectImages.forEach(image => {
+        image.addEventListener('click', function() {
+            // Pilih gambar dengan kelas .object-contain di dalam project-detail
+            const fullImage = this.closest('.project-card').querySelector('.project-detail img');
+            
+            if (fullImage) {
+                popupImage.src = fullImage.src;
+                imagePopup.style.display = 'flex';
+            }
+        });
+    });
+
+    closePopup.addEventListener('click', function() {
+        imagePopup.style.display = 'none';
+    });
+
+    imagePopup.addEventListener('click', function(event) {
+        if (event.target === imagePopup) {
+            imagePopup.style.display = 'none';
+        }
+    });
+});
 </script>
 </html>
